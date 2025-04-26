@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display:flex;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+.grid{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+.grid-item{
+    background-color: #db6969;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(1fr 1fr);
+    }
+}
